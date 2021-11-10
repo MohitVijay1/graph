@@ -6,7 +6,7 @@ void bfsofgraph(int node,vector<int> adj[],int src)
     vis[src]=true;
     while(!q.empty())
     {
-        int lr=q.top();
+        int lr=q.front();
         cout<<lr<<" ";
         q.pop();
         for(auto it:adj[lr])
